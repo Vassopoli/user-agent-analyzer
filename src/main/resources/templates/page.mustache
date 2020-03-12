@@ -1,0 +1,194 @@
+{{> header}}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 title">
+            <h4>Library: uadetector-resources</h4>
+        </div>
+        <div class="col-sm-12">
+            <h4>Browser</h4>
+        <div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Type:</p>
+        </div>
+        <div class="col-7">
+            <p>{{uadetectorResourcesBrowserType}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Family:</p>
+        </div>
+        <div class="col-7">
+            <p>{{uadetectorResourcesBrowserFamily}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Version:</p>
+        </div>
+        <div class="col-7">
+             <p>{{uadetectorResourcesBrowserVersion}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>Operating System</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Family:</p>
+        </div>
+        <div class="col-7">
+             <p>{{uadetectorResourcesOperatingSystemFamily}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Version:</p>
+        </div>
+        <div class="col-7">
+             <p>{{uadetectorResourcesOperatingSystemVersion}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>Device</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Name:</p>
+        </div>
+        <div class="col-7">
+             <p>{{uadetectorResourcesDevice}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 title">
+            <h4>Library: uap-java</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>Browser</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Family:</p>
+        </div>
+        <div class="col-7">
+            <p>{{uapJavaBrowserFamily}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Version:</p>
+        </div>
+        <div class="col-7">
+             <p>{{uapJavaBrowserVersion}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>Operating System</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Family:</p>
+        </div>
+        <div class="col-7">
+             <p>{{uapJavaOperatingSystemFamily}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Version:</p>
+        </div>
+        <div class="col-7">
+             <p>{{uapJavaOperatingSystemVersion}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h4>Device</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <p>Name:</p>
+        </div>
+        <div class="col-7">
+             <p>{{uapJavaDevice}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 title">
+            <h4>Raw User-Agent</h4>
+        </div>
+        <div class="col-sm-12">
+            <p>{{userAgent}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 title">
+            <h4>Comparative</h4>
+        </div>
+        <div class="col-sm-12">
+            <table class="table">
+                <tbody>
+                    <tr>
+                      <th></th>
+                        <td>uadetector-resources</td>
+                        <td>uap-java</td>
+                        <td>Equals</td>
+                    </tr>
+                    <tr>
+                      <th>Browser Type</th>
+                        <td>{{uadetectorResourcesBrowserType}}</td>
+                        <td>UNSUPPORTED</td>
+                        <td><i class="fas fa-{{#isEqualsBrowserType}}check{{/isEqualsBrowserType}}{{^isEqualsBrowserType}}exclamation-triangle{{/isEqualsBrowserType}}"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Browser Family</th>
+                        <td>{{uadetectorResourcesBrowserFamily}}</td>
+                        <td>{{uapJavaBrowserFamily}}</td>
+                        <td><i class="fas fa-{{#isEqualsBrowserFamily}}check{{/isEqualsBrowserFamily}}{{^isEqualsBrowserFamily}}exclamation-triangle{{/isEqualsBrowserFamily}}"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Browser Version</th>
+                        <td>{{uadetectorResourcesBrowserVersion}}</td>
+                        <td>{{uapJavaBrowserVersion}}</td>
+                        <td><i class="fas fa-{{#isEqualsBrowserVersion}}check{{/isEqualsBrowserVersion}}{{^isEqualsBrowserVersion}}exclamation-triangle{{/isEqualsBrowserVersion}}"></i></td>
+                    </tr>
+                    <tr>
+                      <th>O.S. Family</th>
+                        <td>{{uadetectorResourcesOperatingSystemFamily}}</td>
+                        <td>{{uapJavaOperatingSystemFamily}}</td>
+                        <td><i class="fas fa-{{#isEqualsOperatingSystemFamily}}check{{/isEqualsOperatingSystemFamily}}{{^isEqualsOperatingSystemFamily}}exclamation-triangle{{/isEqualsOperatingSystemFamily}}"></i></td>
+                    </tr>
+                    <tr>
+                      <th>O.S. Version</th>
+                        <td>{{uadetectorResourcesOperatingSystemVersion}}</td>
+                        <td>{{uapJavaOperatingSystemVersion}}</td>
+                        <td><i class="fas fa-{{#isEqualsOperatingSystemVersion}}check{{/isEqualsOperatingSystemVersion}}{{^isEqualsOperatingSystemVersion}}exclamation-triangle{{/isEqualsOperatingSystemVersion}}"></i></td>
+                    </tr>
+                    <tr>
+                      <th>Device</th>
+                        <td>{{uadetectorResourcesDevice}}</td>
+                        <td>{{uapJavaDevice}}</td>
+                        <td><i class="fas fa-{{#isEqualsDevice}}check{{/isEqualsDevice}}{{^isEqualsDevice}}exclamation-triangle{{/isEqualsDevice}}"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+{{> footer}}

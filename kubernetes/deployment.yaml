@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-agent-deployment
+  labels:
+    app: user-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-agent
+  template:
+    metadata:
+      labels:
+        app: user-agent
+    spec:
+      containers:
+      - name: user-agent
+        image: vassopoli/user-agent:latest
+        ports:
+        - containerPort: 8080
